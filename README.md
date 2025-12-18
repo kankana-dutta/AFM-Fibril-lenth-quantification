@@ -70,12 +70,11 @@ Flattening + ridge enhancement makes detection robust and consistent, so length 
 - `MIN_LENGTH_UM` : discard tiny fragments / noise
 ---
 
-  ## Raw image and processed image
-<img width="596" height="596" alt="Screenshot 2025-12-18 180222" src="https://github.com/user-attachments/assets/2932bc88-da99-4e16-972d-333b7f9290fa" />
+ ## Raw image  
+<img width="300" height="300" alt="Screenshot 2025-12-18 180222" src="https://github.com/user-attachments/assets/2932bc88-da99-4e16-972d-333b7f9290fa" />
 
-
-After processing:
--<img width="2466" height="678" alt="image" src="https://github.com/user-attachments/assets/09f12c26-47af-4bcd-b7e9-23dbdd123fdc" />
+## Processed image
+<img width="2466" height="678" alt="image" src="https://github.com/user-attachments/assets/09f12c26-47af-4bcd-b7e9-23dbdd123fdc" />
 <img width="2456" height="676" alt="image" src="https://github.com/user-attachments/assets/584b2c9d-3dfa-4107-aa5f-71b5b792901d" />
 
 ## Estimated Results:
@@ -86,5 +85,8 @@ After processing:
 - Mean length:   0.234 µm
 - Median length: 0.192 µm
 - Min / Max:     0.093 / 0.543 µm
+---
 
+### Note
+Compared to manual ImageJ quantification, the summary statistics produced by this script may still carry an estimated ~5% error; the pipeline is designed to reduce and standardize this error via consistent preprocessing, ridge detection, skeletonization, and length measurement.
 
